@@ -1,14 +1,17 @@
 --- # tabs dont work for yaml
 - hosts : all  # since we need to run on all host
   become : yes   # already user is sudo user so using its sudo privilege
+  gather_facts : yes   # yes or no dosent matter it will alweays gather facts
   tasks :
    - name: Install apache httpd  
      apt:
        name: apache2
        state: present
+     where : ansible_os_family == "Debian" # will based on the condition only install on debian system
    - name : i wan to ping all nodes  
      ping :
    - name : installing tree
      apt : 
         name: tree
         state : present
+     where : ansible_os_family == "Debian"
