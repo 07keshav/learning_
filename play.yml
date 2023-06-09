@@ -2,8 +2,8 @@
 - hosts : all  # since we need to run on all host
   become : yes   # already user is sudo user so using its sudo privilege
   tasks :
-  - name : i want to install webserver on nodes
+  - name : i want to instal tree
     apt : 
-    - name : apache2
+    - name : tree
       state : present 
       
