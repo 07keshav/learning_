@@ -1,9 +1,14 @@
----
+--- # tabs dont work for yaml
 - hosts : all  # since we need to run on all host
   become : yes   # already user is sudo user so using its sudo privilege
   tasks :
-  - name : i want to instal tree
-    apt : 
-    - name : tree
-      state : present 
-      
+   - name: Install apache httpd  
+     apt:
+       name: apache2
+       state: present
+   - name : i wan to ping all nodes  
+     ping :
+   - name : installing tree
+     apt : 
+        name: tree
+        state : present
