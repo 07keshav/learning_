@@ -1,0 +1,34 @@
+---
+# "-" we use this symbol only when to represent multiple objects 
+# within address block when we know that there will be only one 
+# object atmost so we dont even put the "-" sign not rrecomended
+# stings can be within inveretd commas and without inverted commas
+# [{},{},{}] system format
+
+- mystudents : 
+    - name : koi mil gya
+      roll no : 1
+      class : 1
+      address : 
+          - doorno : 1
+            block no :  121
+            ward : 3
+            street : kidwai nagar
+
+    - name : keshav
+      roll no : 2
+      class :  2
+      address :  
+          - doorno : 2
+            block no :  2
+            ward : 2
+            street : lucknow
+
+    - name : krishan 
+      roll no : 3
+      class :  3
+      address :  
+          doorno : 3
+          block no :  3 
+          ward : 3
+          street : birhanna road      
