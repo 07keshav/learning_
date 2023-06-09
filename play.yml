@@ -1,6 +1,6 @@
 ---
-- hosts : alls  # since we need to run on all host
-  becom : yes   # already user is sudo user so using its sudo privilege
+- hosts : all  # since we need to run on all host
+  become : yes   # already user is sudo user so using its sudo privilege
   tasks :
   - name : i wnat to install webserver on nodes
     apt : 
