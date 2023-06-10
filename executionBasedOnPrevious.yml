@@ -3,9 +3,11 @@
   become: yes
   tasks: 
   - name: run CLI command 
-    command: 
-      - hostname -f
-      - whoami
+    command: hostname -f
+  - name: install git
+    apt:
+      name: git
+      state: pressent
     
 
     
