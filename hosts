@@ -1,4 +1,5 @@
-
+# idhar apne hissab se nodes ka grouping bana dete hn...usse easy hota h....folder name hmasesha whi rhe ga
+# group_vars (file name as group name ) or host_vars (file name as respective host name)
 [mywebserver]
 172.31.10.200
 
@@ -8,5 +9,6 @@
 [mytestingserver]
 10.23.23.1
 
+ # file lamba ho jata ha isliye yahan nhi likhte
 [mywebserver:vars]
 software=apache22222222

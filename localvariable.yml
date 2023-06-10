@@ -1,0 +1,15 @@
+---
+- host: mywebserver
+  become: yes
+  gather_facts: yes
+  vars: 
+     myvar01: tree
+     myvar02: apache2
+  tasks: 
+  - name: I want to display myvar01
+    debug: 
+      msg: "{{myvar01}}"
+
+  - name: I want to display group variable
+    debug: 
+      msg: "{{software}}"

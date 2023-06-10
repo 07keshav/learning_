@@ -1,0 +1,3 @@
+# host variables have the highest priority
+---
+software: tree
