@@ -3,7 +3,9 @@
   become: yes
   tasks: 
   - name: run CLI command 
-    command: hostname -f
+    command: 
+      - hostname -f
+      - whoami
     
 
     
