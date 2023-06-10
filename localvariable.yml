@@ -1,3 +1,4 @@
+# debug module helps in showing the output of variables......and every thing on the CLI as a result of execution is a variable
 ---
 - hosts: mywebserver
   become: yes
