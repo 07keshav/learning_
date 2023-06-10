@@ -3,7 +3,7 @@
   become: yes
   gather_facts: yes
   vars: 
-     myvar01: tree
+     myvar01: tree000000
      myvar02: apache2
   tasks: 
   - name: I want to display myvar01
