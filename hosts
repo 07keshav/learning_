@@ -1,4 +1,4 @@
-
+# simply grouping out our hosts based on some technocality
 [mywebserver]
 172.31.10.200
 
