@@ -17,6 +17,6 @@
       
 
     - name : i want to install on redhat apache2
-      yum :
+      dnf:
            name : httpd
            state : latest
