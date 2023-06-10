@@ -7,11 +7,16 @@
       apt:
           name: apache2
           state: present
-      when: ansible_os_family == "Debian" # will based on the condition only install on debian system
+       # will based on the condition only install on debian system
     - name : i wan to ping all nodes  
       ping :
     - name : installing tree
       apt : 
             name: tree
             state : present
-      when: ansible_os_family == "Debian"
+      
+
+    - name : i want to install on redhat apache2
+      yum :
+           name : httpd
+           state : latest
