@@ -6,9 +6,9 @@
     command: hostname -f
     register: myfirsttask
 
-  - name: install git
+  - name: install apache2
     apt:
-      name: git
+      name: apache2
       state: pressent
     register: mysecondtask
 
