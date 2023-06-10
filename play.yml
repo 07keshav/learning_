@@ -7,11 +7,11 @@
      apt:
        name: apache2
        state: present
-     where : ansible_os_family == "Debian" # will based on the condition only install on debian system
+    # where : ansible_os_family == "Debian" # will based on the condition only install on debian system
    - name : i wan to ping all nodes  
      ping :
    - name : installing tree
      apt : 
         name: tree
         state : present
-     where : ansible_os_family == "Debian"
+    # where : ansible_os_family == "Debian"
