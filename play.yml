@@ -32,10 +32,8 @@
       when : ansible_os_family == 'RedHat'
 
     - name: Start service httpd, if not started
-      ansible.builtin.service:
-            name: 
-               -httpd
-               -apache2
+      service:
+            name: httpd
             state: started
 
          
