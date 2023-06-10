@@ -2,10 +2,8 @@
 - hosts: mywebserver
   become: yes
   tasks: 
-  - name: run ClI command 
-    command: 
-          - hostname -f
-          - whoami
+  - name: run CLI command 
+    command: hostname -f
     
 
     
