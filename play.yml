@@ -16,10 +16,18 @@
       apt : 
             name: tree
             state : present
+      when : ansible_os_family=='Debian'    # if not used and differenrt os are used then simply failed red lines will be therr
       
 
     - name : i want to install on redhat apache2
-      yum :
+      dnf :
            name : httpd
            state : latest
       when : ansible_os_family=='RedHat'
+
+    - name : i want to install trree on redhat 
+      dnf : 
+          name : tree
+          state: latest
+      when : ansible_os_family == 'RedHat'
+         
