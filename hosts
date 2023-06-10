@@ -1,1 +1,9 @@
+
+[mywebserver]
 172.31.10.200
+
+[mydatabseserver]
+10.12.19.158
+
+[mytestingserver]
+10.23.23.1
