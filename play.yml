@@ -1,9 +1,9 @@
 --- # tabs dont work for yaml
-- hosts : all  # since we need to run on all defined hosts since we define the hosts here so no need to type in command line ...while in adhoc commands its necessary to type hosts
+- hosts : mywebserver  # since we need to run on all defined hosts since we define the hosts here so no need to type in command line ...while in adhoc commands its necessary to type hosts
   become : yes   # already user is sudo user so using its sudo privilege
   gather_facts : yes   # yes or no dosent matter it will alweays gather facts
   tasks :
-    - name: Install apache httpd  
+    - name: Install apache apache2   
       apt:
           name: apache2
           state: present
