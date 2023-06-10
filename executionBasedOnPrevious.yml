@@ -4,10 +4,22 @@
   tasks: 
   - name: run CLI command 
     command: hostname -f
+    register: myfirsttask
+
   - name: install git
     apt:
       name: git
       state: pressent
+    register: mysecondtask
+
+  - name: show first tasks
+    debug:
+      msg: "{{myfirsttask}}"
+
+  - name: show second tasks
+    debug:
+      msg: "{{mysecondtask}}"
+
     
 
     
