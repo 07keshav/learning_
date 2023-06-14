@@ -12,6 +12,6 @@
 [mytestingserverPrivate]
 172.31.30.252
 
- # file lamba ho jata ha isliye yahan nhi likhte
+# file lamba ho jata ha isliye yahan nhi likhte
 [mywebserver:vars]
 software=apache22222222

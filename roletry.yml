@@ -1,5 +1,5 @@
 ---
-- tasks: all
+- hosts: mydatabseserver
   become: yes
   roles:
   - role: ROLEtry
