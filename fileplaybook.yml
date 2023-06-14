@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  gather_info: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: install tree
+    apt:
+       name: tree
+       state: present
+       update_cache: yes
