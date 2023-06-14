@@ -1,0 +1,7 @@
+---
+- name: i wnat ot downloaad a file
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.34/bin/apache-tomcat-9.0.34.tar.gz.sha512
+    dest: /home/maha/apache-tomcat-9.0.34.tar.gz.sha512
+    force_basic_auth: yes
+    

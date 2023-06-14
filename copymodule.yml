@@ -1,0 +1,10 @@
+---
+- hosts: mytestingserverPrivate
+  become: yes
+  gather_facts: yes
+  tasks:
+  - include_tasks: get_url module.yml
+  - name: copy index file to remote server
+    copy:
+       src: myindexfiel
+       dest: /var/www/html/index.html 
