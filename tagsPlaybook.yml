@@ -7,13 +7,13 @@
       name: git
       state: present
       update_cache: yes
-    tag: mygit
+    tags: mygit
 
   - name: install apache2
     apt:
       name: apache2
       state: present
       update_cache: yes
-    tag: myapache
+    tags: myapache
     when: ansible_os_family == 'Debian'
     
