@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mydatabseserver
   become: yes
   tasks:
   - name: i want to install apache2
@@ -9,9 +9,15 @@
       update_cache: yes
     
 
-  - name: i wnt to ping
+  - name: i want to ping
     ping:
     notify: restartWebserver
+
+  - name: i want to install tree
+    apt: 
+      name: tree
+      state: present
+    notify: restartWebserver 
   
   handlers:
   - name: restartWebserver
@@ -19,11 +25,7 @@
       name: apache2
       state: restarted
 
-  - name: i want to install tree
-    apt: 
-      name: tree
-      state: present
-    notify: restartWebserver 
+  
 
   
   
