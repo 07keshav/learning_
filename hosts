@@ -6,8 +6,11 @@
 [mydatabseserver]
 10.12.19.158
 
-[mytestingserver]
+[mytestingserverPUblic]
 18.191.158.44
+
+[mytestingserverPrivate]
+172.31.30.252
 
  # file lamba ho jata ha isliye yahan nhi likhte
 [mywebserver:vars]

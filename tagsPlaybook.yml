@@ -1,5 +1,5 @@
 ---
-- hosts: mytestingserver
+- hosts: mytestingserverPrivate
   become: yes
   tasks: 
   - name: install git 
