@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install git
+    apt: 
+      name: git
+      state: present
+      update_cache: yes
+    notify: restartWebserver
+  
+  handlers:
+  - name: restartWebserver
+    service: 
+      name: apache2
+      state: restarted
+  
+  - name: i wnt to ping
+    ping:
+    notify: restartWebserver
