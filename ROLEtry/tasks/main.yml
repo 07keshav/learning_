@@ -1,7 +1,9 @@
 ---
-- hosts: all
-  become: yes
-  tasks:
   - include_tasks: createUseransible
+  - include_tasks: installJava.yml
+  - include_tasks: downloadTomcat.yml
+  - include_tasks: TomcatFilepermissions.yml
+  - include_tasks: tomcatDashboard.yml
+  - include_tasks: tomrestart.yml
 
 
