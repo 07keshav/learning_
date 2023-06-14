@@ -1,6 +1,6 @@
 ---
 - name: create a file 
   file:
-    path: /home/maha/testfile
+    path: /home/maha/testfile1
     state: touch
   register: myfileoutput
