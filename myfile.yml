@@ -3,4 +3,4 @@
   file:
     path: /home/maha/testfile
     state: touch
-    
+    register: myfileoutput
