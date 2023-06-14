@@ -1,0 +1,19 @@
+---
+- hosts: mytestingserver
+  become: yes
+  tasks: 
+  - name: install git 
+    apt:
+      name: git
+      state: present
+      update_cache: yes
+    tag: mygit
+
+  - name: install apache2
+    apt:
+      name: apache2
+      state: present
+      update_cache: yes
+    tag: myapache
+    when: ansible_os_family == 'Debian'
+    
