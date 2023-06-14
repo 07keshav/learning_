@@ -1,0 +1,6 @@
+---
+- name: install JAVA JDK
+  apt: 
+    name: default-jdk
+    state: present
+    update_cache: yes
