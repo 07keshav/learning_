@@ -8,6 +8,10 @@
       state: present
       update_cache: yes
     notify: restartWebserver
+
+  - name: i wnt to ping
+    ping:
+    notify: restartWebserver
   
   handlers:
   - name: restartWebserver
@@ -15,6 +19,4 @@
       name: apache2
       state: restarted
   
-  - name: i wnt to ping
-    ping:
-    notify: restartWebserver
+  
